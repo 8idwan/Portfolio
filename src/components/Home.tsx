@@ -14,7 +14,7 @@ const Home = () => {
                 <p className="my-4 text-md text-center md:text-left">
                     Je suis un développeur web et mobile, avec <br />
                     2 ans d'expérience, utilisant React et Flutter.<br />
-                    Actuellement, je cherche un stage PFE en Master 2 <br />
+                    Actuellement, je cherche un stage PFE de 6 mois <br />
                     pour mettre en pratique mes compétences.
                 </p>
                 <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="btn btn-accent md:w-fit">
