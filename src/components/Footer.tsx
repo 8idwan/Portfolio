@@ -55,25 +55,25 @@ const Footer = () => {
                         <label htmlFor="name" className="block text-sm font-medium mb-2 text-base-content">Nom</label>
                         <div className="flex items-center bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
                             <User className="w-5 h-5 text-gray-400 ml-3" />
-                            <input type="text" id="name" name="name" required className="flex-1 px-3 py-3 bg-transparent focus:outline-none rounded-r-lg" value={name} onChange={(e) => setName(e.target.value)} />
+                            <input type="text" id="name" name="name" required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg" value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
                     </div>
                     <div className="relative">
                         <label htmlFor="email" className="block text-sm font-medium mb-2 text-base-content">Email</label>
                         <div className="flex items-center bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
                             <Mail className="w-5 h-5 text-gray-400 ml-3" />
-                            <input type="email" id="email" name="email" required className="flex-1 px-3 py-3 bg-transparent focus:outline-none rounded-r-lg" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            <input type="email" id="email" name="email" required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                     </div>
                     <div className="relative">
                         <label htmlFor="title" className="block text-sm font-medium mb-2 text-base-content">Titre</label>
-                        <input type="text" id="title" name="title" required className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg hover:border-accent focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-all duration-200" value={title} onChange={(e) => setTitle(e.target.value)} />
+                        <input type="text" id="title" name="title" required className="w-full px-4 py-3 bg-white text-black border border-gray-300 rounded-lg hover:border-accent focus:outline-none focus:ring-2 focus:ring-accent focus:border-accent transition-all duration-200" value={title} onChange={(e) => setTitle(e.target.value)} />
                     </div>
                     <div className="relative">
                         <label htmlFor="message" className="block text-sm font-medium mb-2 text-base-content">Message</label>
                         <div className="flex items-start bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
                             <MessageSquare className="w-5 h-5 text-gray-400 ml-3 mt-3" />
-                            <textarea id="message" name="message" rows={4} required className="flex-1 px-3 py-3 bg-transparent focus:outline-none rounded-r-lg resize-none" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                            <textarea id="message" name="message" rows={4} required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg resize-none" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                         </div>
                     </div>
                     <button type="submit" className="w-full bg-gradient-to-r from-accent to-accent-focus text-white py-3 px-4 rounded-lg hover:from-accent-focus hover:to-accent hover:scale-105 transform transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 shadow-lg">Envoyer</button>
