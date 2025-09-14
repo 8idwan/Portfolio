@@ -26,6 +26,8 @@ import imgTENSORFLOW from "../assets/techno/tensorflow.png";
 import imgTYPE from "../assets/techno/typescript.png";
 import imgDOCKER from "../assets/techno/docker.png";
 import imgKUBERNETES from "../assets/techno/Kubernetes.png";
+import imgFIREBASE from "../assets/techno/firebase.png";
+import imgSUPABASE from "../assets/techno/supabase.svg";
 
 const skillCategories = [
   { title: "Langages", skills: [
@@ -62,6 +64,8 @@ const skillCategories = [
       { name: "MongoDB", image: imgMONGODB },
       { name: "MySQL", image: imgMYSQL },
       { name: "SQL", image: imgSQL },
+      { name: "Supabase", image: imgSUPABASE },
+      { name: "Firebase", image: imgFIREBASE },
     ],
   },
   { title: "DevOps", skills: [

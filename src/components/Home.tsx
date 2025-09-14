@@ -1,5 +1,6 @@
-import { Mail } from "lucide-react"
+import { Mail, Download } from "lucide-react"
 import img from '../assets/img.jpeg'
+import cv from '../assets/ANNOUN_CV.pdf'
 
 const Home = () => {
     return (
@@ -17,10 +18,16 @@ const Home = () => {
                     Actuellement, je cherche un stage PFE de 6 mois <br />
                     pour mettre en pratique mes compétences.
                 </p>
-                <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="btn btn-accent md:w-fit">
-                    <Mail className="w-5 h-5" />
-                    Contactez-moi
-                </button>
+                <div className="flex gap-4">
+                    <a href={cv} download className="btn btn-outline btn-accent md:w-fit">
+                        <Download className="w-5 h-5" />
+                        Télécharger CV
+                    </a>
+                    <button onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })} className="btn btn-accent md:w-fit">
+                        <Mail className="w-5 h-5" />
+                        Contactez-moi
+                    </button>
+                </div>
 
 
             </div>
