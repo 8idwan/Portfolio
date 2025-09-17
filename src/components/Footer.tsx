@@ -27,21 +27,23 @@ const Footer = () => {
 
     return (
         <footer className="footer footer-center p-10 bg-base-200">
-            <div id="contact" className="w-full max-w-lg mx-auto mt-10 p-8 bg-gradient-to-br from-base-100 to-base-200 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-base-300">
+            <div id="contact" className="w-full max-w-2xl mx-auto mt-10 p-8 bg-gradient-to-br from-base-100 to-base-200 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-base-300">
                 <h3 className="text-2xl font-bold mb-8 text-center text-white">Contactez-moi</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="relative">
-                        <label htmlFor="name" className="block text-sm font-medium mb-2 text-base-content">Nom</label>
-                        <div className="flex items-center bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
-                            <User className="w-5 h-5 text-gray-400 ml-3" />
-                            <input type="text" id="name" name="name" required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg" value={name} onChange={(e) => setName(e.target.value)} />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="relative">
+                            <label htmlFor="name" className="block text-sm font-medium mb-2 text-base-content">Nom</label>
+                            <div className="flex items-center bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
+                                <User className="w-5 h-5 text-gray-400 ml-3" />
+                                <input type="text" id="name" name="name" required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg" value={name} onChange={(e) => setName(e.target.value)} />
+                            </div>
                         </div>
-                    </div>
-                    <div className="relative">
-                        <label htmlFor="email" className="block text-sm font-medium mb-2 text-base-content">Email</label>
-                        <div className="flex items-center bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
-                            <Mail className="w-5 h-5 text-gray-400 ml-3" />
-                            <input type="email" id="email" name="email" required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg" value={email} onChange={(e) => setEmail(e.target.value)} />
+                        <div className="relative">
+                            <label htmlFor="email" className="block text-sm font-medium mb-2 text-base-content">Email</label>
+                            <div className="flex items-center bg-white rounded-lg border border-gray-300 hover:border-accent transition-colors duration-200 focus-within:ring-2 focus-within:ring-accent focus-within:border-accent">
+                                <Mail className="w-5 h-5 text-gray-400 ml-3" />
+                                <input type="email" id="email" name="email" required className="flex-1 px-3 py-3 bg-transparent text-black focus:outline-none rounded-r-lg" value={email} onChange={(e) => setEmail(e.target.value)} />
+                            </div>
                         </div>
                     </div>
                     <div className="relative">
