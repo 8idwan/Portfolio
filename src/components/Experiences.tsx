@@ -101,8 +101,8 @@ const Competences = () => {
             onClick={() => setActiveTab(index)}
             className={`px-4 py-2 font-bold rounded-full text-sm transition-all ${
               activeTab === index
-                ? "bg-accent text-white shadow-md"
-                : "bg-gray-100 dark:bg-gray-800 hover:bg-accent/20"
+                ? "bg-[#ffb86c] text-white shadow-md"
+                : "bg-[#1f2937] text-white hover:bg-accent/20"
             }`}
           >
             {category.title}
@@ -118,7 +118,7 @@ const Competences = () => {
                 key={i}
                 className="flex flex-col items-center cursor-pointer transform transition-all duration-300 hover:scale-125" // zoom un peu plus
             >
-                <div className="w-24 h-24 p-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-sm"> {/* taille plus grande */}
+                <div className="w-24 h-24 p-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-[#1f2937] shadow-sm"> {/* taille plus grande */}
                 <img
                     src={skill.image}
                     alt={skill.name}
