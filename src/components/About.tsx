@@ -41,14 +41,14 @@ const About = () => {
                 <Title title="À propos" />
                 <div className="mt-1 md:mt-2 md:min-h-screen flex justify-center items-center w-full">
                     <div className="hidden md:block">
-                        <img src={img3} alt="" className=" w-96 object-cover rounded-xl"
+                        <img src={img3} alt="" className=" w-96 object-cover rounded-xl transition-transform duration-300 hover:scale-105 cursor-pointer"
                         />
                     </div>
 
                     <div className="md:ml-4 space-y-4">
                         {aboutSections.map((section) => (
                             <div key={section.id}
-                                className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl"
+                                className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
                             >
                                 <div className="mb-2 md:mb-0">
                                     {section.icon}
